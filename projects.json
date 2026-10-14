@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Kayi",
+    "url": "https://kayi.soft-tech.net/",
+    "description": "AI over SMS for kosher phones: ask anything by text, with phone sign-in, chat history and an admin console.",
+    "image": "images/kayi.png"
+  },
+  {
+    "name": "Unique Tools",
+    "url": "https://uniquetools.app/",
+    "description": "Online tools for PDFs, images, audio and HTML, plus Hebrew and Yiddish keyboard tools.",
+    "image": "images/unique-tools.png"
+  },
+  {
+    "name": "CheckScan AI",
+    "url": "https://checkscan.soft-tech.net/",
+    "description": "Scan invoices with AI to create and print checks, with PO tracking and a secure ledger.",
+    "image": "images/checkscan.png"
+  },
+  {
+    "name": "First LifeSavers",
+    "url": "https://firstlifesavers.com/",
+    "description": "Certified First Aid, CPR & AED and BLS courses, taught in Yiddish or English, with separate classes for men and women.",
+    "image": "images/first-lifesavers.svg"
+  },
+  {
+    "name": "Yid Chat",
+    "url": "https://yidchats.com/",
+    "description": "A curated directory of organized links, where users can submit new resources for approval and share feedback.",
+    "image": "images/yid-chat.png"
+  },
+  {
+    "name": "SoftTech MDM",
+    "url": "https://softtech.sites.tab.bot/",
+    "description": "Device management for managed Android phones: an app store, browser filtering, app controls and location, all from one dashboard.",
+    "image": "images/softtech-mdm.png"
+  }
+]
