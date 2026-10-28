@@ -30,6 +30,12 @@
     "image": "images/yid-chat.png"
   },
   {
+    "name": "GlobalSip",
+    "url": "https://globalsipus.com/",
+    "description": "Global Sip imports and distributes distinctive beverages from around the world. We help international producers reach the U.S. market",
+    "image": "images/globalsip.png"
+  },
+  {
     "name": "SoftTech MDM",
     "url": "https://mdm.soft-tech.net/",
     "description": "Device management for managed Android phones: an app store, browser filtering, app controls and location, all from one dashboard.",
