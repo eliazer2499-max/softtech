@@ -60,6 +60,10 @@
       img.alt = item.name + " logo";
       img.loading = "lazy";
       if (item.imageStyle === "cover") img.className = "cover";
+      // Wide logos (like a word mark) get a little white margin so they don't touch the edges
+      img.onload = function () {
+        if (img.naturalWidth > img.naturalHeight * 1.3) img.classList.add("wide");
+      };
       img.onerror = function () {
         console.warn("SoftTech: image not found for \"" + item.name + "\": " + item.image + " (showing a letter tile instead)");
         media.replaceChildren(tile(item));

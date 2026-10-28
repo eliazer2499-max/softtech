@@ -38,9 +38,18 @@
     return chars[0] || "?";
   }
 
+  // A-Z by name, ignoring capitals and accents ("GlobalSip" next to "Global Sip"; "2" before "10").
+  var collator = typeof Intl !== "undefined" && Intl.Collator ? new Intl.Collator("en", { sensitivity: "base", numeric: true }) : null;
+  function byName(a, b) {
+    if (collator) return collator.compare(a.name, b.name);
+    var x = a.name.toLowerCase(), y = b.name.toLowerCase();
+    return x < y ? -1 : x > y ? 1 : 0;
+  }
+
   /*
-    prepare(data) -> { items: [...good entries, in file order], skipped: [{ number, reason }] }
+    prepare(data) -> { items: [...good entries, sorted A-Z by name], skipped: [{ number, reason }] }
     number is the entry's position in projects.json, counting from 1.
+    The order in projects.json doesn't matter: the list is always shown A-Z (ignoring capitals).
   */
   function prepare(data) {
     var items = [], skipped = [];
@@ -61,6 +70,7 @@
       if (p.imageStyle === "cover") item.imageStyle = "cover";
       items.push(item);
     });
+    items.sort(byName);
     return { items: items, skipped: skipped };
   }
 
